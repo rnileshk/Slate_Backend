@@ -1,0 +1,689 @@
+{
+	"id": "a63fbd22-6a21-4d59-b55f-a99fa828d209",
+	"name": "Slate_Backend_Api",
+	"timestamp": "2025-01-31T23:45:07.863Z",
+	"collection_id": "29282532-74b5dc08-55fe-4f42-8619-951edc509315",
+	"folder_id": 0,
+	"environment_id": "29282532-1d4ecc0a-3a57-4cb6-9732-895c1be8e093",
+	"totalPass": 56,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-01-31T23:45:05.028Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "0fcb6302-172f-4815-b94a-22084396b1d5",
+			"name": "Login - School",
+			"url": "/auth/login",
+			"time": 148,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Response has the required fields": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				148
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Response has the required fields": true
+				}
+			]
+		},
+		{
+			"id": "b813c497-8c1a-4fb8-ba62-f3b6c18ef51c",
+			"name": "Login - School",
+			"url": "http://localhost:3000/auth/login",
+			"time": 127,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has the required fields": true,
+				"Response body is in JSON format": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				127
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has the required fields": true,
+					"Response body is in JSON format": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "00ce7a13-a0bc-483a-9ae4-fd3bbfa8f261",
+			"name": "Login - Student",
+			"url": "http://localhost:3000/auth/login",
+			"time": 98,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Token is a non-empty string": true,
+				"Content-Type header is application/json": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Token is a non-empty string": true,
+					"Content-Type header is application/json": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "57fa41fd-3a8d-48ca-a2eb-cbdd6f364aca",
+			"name": "Login - Student",
+			"url": "http://localhost:3000/auth/login",
+			"time": 94,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has the required fields": true,
+				"Error field exists and is a string": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error field exists and is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				94
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has the required fields": true,
+					"Error field exists and is a string": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "3c5b5d39-c4b4-4017-8bf2-2288bede1b4f",
+			"name": "Login - Parent",
+			"url": "http://localhost:3000/auth/login",
+			"time": 157,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"Response time is within an acceptable range": true,
+				"Response has the required field - token": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is within an acceptable range": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - token": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				157
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"Response time is within an acceptable range": true,
+					"Response has the required field - token": true
+				}
+			]
+		},
+		{
+			"id": "01e94b8d-a2b2-45a7-8706-6b634c339df1",
+			"name": "Login - Parent",
+			"url": "http://localhost:3000/auth/login",
+			"time": 150,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response time is less than 500ms": true,
+				"Response has the required fields": true,
+				"Error message is a non-empty string": true,
+				"Content-Type header is application/json": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				150
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response time is less than 500ms": true,
+					"Response has the required fields": true,
+					"Error message is a non-empty string": true,
+					"Content-Type header is application/json": true
+				}
+			]
+		},
+		{
+			"id": "627479df-1a83-47bd-95bb-298cf66fc6a9",
+			"name": "Role - Parent",
+			"url": "http://localhost:3000/auth/login",
+			"time": 117,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has the required fields": true,
+				"Response time is within an acceptable range": true,
+				"Content-Type header is application/json": true,
+				"Error message is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is within an acceptable range": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				117
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has the required fields": true,
+					"Response time is within an acceptable range": true,
+					"Content-Type header is application/json": true,
+					"Error message is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "e10bfa9b-7006-4533-847c-c19a77ce06cb",
+			"name": "Role - Student",
+			"url": "http://localhost:3000/auth/login",
+			"time": 136,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has the required fields": true,
+				"Response time is less than 200ms": true,
+				"Content-Type header is application/json": true,
+				"Error field is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error field is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				136
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has the required fields": true,
+					"Response time is less than 200ms": true,
+					"Content-Type header is application/json": true,
+					"Error field is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "82287b29-064d-4964-8fca-d5dea0e75691",
+			"name": "Role - School",
+			"url": "http://localhost:3000/auth/login",
+			"time": 104,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response status code is 401": true,
+				"Response has the required fields": true,
+				"Validate the response content type is application/json": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the response content type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				104
+			],
+			"allTests": [
+				{
+					"Response status code is 401": true,
+					"Response has the required fields": true,
+					"Validate the response content type is application/json": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "c0bcf9ac-6c05-460d-b4a6-ff6145f64e26",
+			"name": "Achiev - Parent",
+			"url": "http://localhost:3000/student/achievements/101",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Response has the required fields - student_id, name, school_name, and achievements": true,
+				"Student ID is a non-negative integer": true,
+				"Name and school_name must be non-empty strings": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - student_id, name, school_name, and achievements": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Student ID is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name and school_name must be non-empty strings": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Response has the required fields - student_id, name, school_name, and achievements": true,
+					"Student ID is a non-negative integer": true,
+					"Name and school_name must be non-empty strings": true
+				}
+			]
+		},
+		{
+			"id": "b9c4484d-4b2d-4f9d-a08c-d510909246e4",
+			"name": "Achiev - School",
+			"url": "http://localhost:3000/student/achievements/101",
+			"time": 6,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response status code is 403": true,
+				"Response has the required fields": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response status code is 403": true,
+					"Response has the required fields": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "920e4f40-4c16-4184-a675-c5ed4520cede",
+			"name": "Achiev - Student",
+			"url": "http://localhost:3000/student/achievements/101",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Achievements is an array": false,
+				"Response time is less than 200ms": true,
+				"Content-Type header is application/json": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Achievements is an array": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Achievements is an array": false,
+					"Response time is less than 200ms": true,
+					"Content-Type header is application/json": true
+				}
+			]
+		},
+		{
+			"id": "5f490fcf-d4b5-49b1-b657-2f83c87d126e",
+			"name": "Access P. Route",
+			"url": "http://localhost:3000/student/achievements/101",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Content-Type is application/json": true,
+				"Response has the required fields - student_id, name, school_name, and achievements": true,
+				"Student_id is a non-negative integer": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - student_id, name, school_name, and achievements": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Student_id is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				15
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Content-Type is application/json": true,
+					"Response has the required fields - student_id, name, school_name, and achievements": true,
+					"Student_id is a non-negative integer": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1169,
+	"collection": {
+		"requests": [
+			{
+				"id": "0fcb6302-172f-4815-b94a-22084396b1d5",
+				"method": "POST"
+			},
+			{
+				"id": "b813c497-8c1a-4fb8-ba62-f3b6c18ef51c",
+				"method": "POST"
+			},
+			{
+				"id": "00ce7a13-a0bc-483a-9ae4-fd3bbfa8f261",
+				"method": "POST"
+			},
+			{
+				"id": "57fa41fd-3a8d-48ca-a2eb-cbdd6f364aca",
+				"method": "POST"
+			},
+			{
+				"id": "3c5b5d39-c4b4-4017-8bf2-2288bede1b4f",
+				"method": "POST"
+			},
+			{
+				"id": "01e94b8d-a2b2-45a7-8706-6b634c339df1",
+				"method": "POST"
+			},
+			{
+				"id": "627479df-1a83-47bd-95bb-298cf66fc6a9",
+				"method": "POST"
+			},
+			{
+				"id": "e10bfa9b-7006-4533-847c-c19a77ce06cb",
+				"method": "POST"
+			},
+			{
+				"id": "82287b29-064d-4964-8fca-d5dea0e75691",
+				"method": "POST"
+			},
+			{
+				"id": "c0bcf9ac-6c05-460d-b4a6-ff6145f64e26",
+				"method": "GET"
+			},
+			{
+				"id": "b9c4484d-4b2d-4f9d-a08c-d510909246e4",
+				"method": "GET"
+			},
+			{
+				"id": "920e4f40-4c16-4184-a675-c5ed4520cede",
+				"method": "GET"
+			},
+			{
+				"id": "5f490fcf-d4b5-49b1-b657-2f83c87d126e",
+				"method": "GET"
+			}
+		]
+	}
+}
