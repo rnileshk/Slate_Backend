@@ -29,23 +29,27 @@ A secure role-based authentication system for Schools, Parents, and Students wit
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/rnileshk/slate-backend.git
+  git clone https://github.com/rnileshk/slate-backend.git
    cd slate-backend
    npm install
 
 ---
 
 2. Set up PostgreSQL database
-
+   ```bash
    createdb 'DB_Name'
    psql -U your_username -d slate -f init.sql
 
 ---
 
 3. Environment Configuration
-
+   ```bash
    Create a .env file
-   
+
+---
+
+4. Setup .env 
+   ```bash
    DB_USER='Your_DB_UserName'
    DB_HOST=localhost
    DB_NAME='DB_Name'
@@ -56,29 +60,29 @@ A secure role-based authentication system for Schools, Parents, and Students wit
 
 ---
 
-4. Start the server
-
+5. Start the server
+   ```bash
    node app.js
 
 ---
 
-5. 🧪 Testing
+6. 🧪 Testing
 
    Set Up Postman Environment
    Use the provided Slate-API-Tests.postman_collection.json
 
 ---
 
-6. Import Slate-Local.postman_environment.json with variables:
-
+7. Import Slate-Local.postman_environment.json with variables:
+   ```bash
     {
      "base_url": "http://localhost:3000",
    }
 
 ---
 
-7. Seed Test Data
-
+8. Seed Test Data
+   ```bash
    INSERT INTO users (name, email, password, role, linked_student_id) 
    VALUES
    ('ABC School', 'school@slate.com', crypt('123456', gen_salt('bf')), 'School', NULL),
