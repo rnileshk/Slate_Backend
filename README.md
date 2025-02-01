@@ -29,7 +29,7 @@ A secure role-based authentication system for Schools, Parents, and Students wit
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/rnileshk/slate-backend.git
+   git clone https://github.com/rnileshk/Slate_Backend.git
    cd slate-backend
    npm install
 
