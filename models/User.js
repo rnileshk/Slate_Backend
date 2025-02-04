@@ -15,29 +15,6 @@ class User {
     );
     return rows[0];
   }
-
-  static async updateResetToken(email, token, expiry) {
-    await pool.query(
-      'UPDATE users SET reset_token = $1, reset_token_expiry = $2 WHERE email = $3',
-      [token, expiry, email]
-    );
-  }
-
-  static async findByResetToken(token) {
-    const { rows } = await pool.query(
-      'SELECT * FROM users WHERE reset_token = $1 AND reset_token_expiry > NOW()',
-      [token]
-    );
-    return rows[0];
-  }
-
-  static async resetPassword(userId, newPassword) {
-    const hashedPassword = await bcrypt.hash(newPassword, 10);
-    await pool.query(
-      'UPDATE users SET password = $1, reset_token = NULL, reset_token_expiry = NULL WHERE id = $2',
-      [hashedPassword, userId]
-    );
-  }
 }
 
 module.exports = User;
